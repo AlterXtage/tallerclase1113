@@ -48,3 +48,8 @@ jobs:
         curl -X POST "https://api.render.com/deploy/srv-csqe3r56l47c73dsfns0?key=zA13SHCfGHY" \
         -H "Content-Type: application/json" \
         -d '{}'
+    - name: Deploy to Render
+      run: |
+        curl -X POST "https://api.render.com/deploy/srv-${{ secrets.RENDER_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}" \
+        -H "Content-Type: application/json" \
+        -d '{}'
