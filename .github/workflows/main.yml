@@ -45,6 +45,6 @@ jobs:
        
     - name: Deploy to Render
       run: |
-        curl -X POST "https://api.render.com/deploy/srv-csqe3ftds78s73cs73vg?key=T2zjESSn-pk" \
+        curl -X POST "https://api.render.com/deploy/srv-csqe3r56l47c73dsfns0?key=zA13SHCfGHY" \
         -H "Content-Type: application/json" \
         -d '{}'
